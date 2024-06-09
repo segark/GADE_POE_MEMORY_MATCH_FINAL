@@ -36,11 +36,11 @@ public class Card : MonoBehaviour, IPointerClickHandler
             string sceneName = SceneManager.GetActiveScene().name;
             if (sceneName == "Human") // Replace with the actual scene name
             {
-                HumanGameManager.Instance.CardRevealed(this);
+               HumanGameManager.Instance.CardRevealed(this);
             }
             else
             {
-                GameManager.Instance.CardRevealed(this);
+                AIGameManager.Instance.CardRevealed(this);
             }
         }
     }

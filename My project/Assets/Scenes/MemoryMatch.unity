@@ -283,7 +283,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 34864806}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -295,7 +295,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0000076294, y: 27.173}
+  m_AnchoredPosition: {x: 0, y: 27.173}
   m_SizeDelta: {x: 343.9471, y: 54.3459}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &34864808
@@ -1524,8 +1524,8 @@ GameObject:
   - component: {fileID: 888749124}
   - component: {fileID: 888749128}
   - component: {fileID: 888749127}
-  - component: {fileID: 888749126}
   - component: {fileID: 888749125}
+  - component: {fileID: 888749129}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -1576,38 +1576,6 @@ MonoBehaviour:
   m_Spacing: {x: 250, y: 250}
   m_Constraint: 1
   m_ConstraintCount: 6
---- !u!114 &888749126
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 888749123}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 850a5a95321e00f4ca00c88dded332a5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cardPrefab: {fileID: 1949372540437625268, guid: a855f9aadecc29949b04565d8c2af5ff, type: 3}
-  cardSprites:
-  - {fileID: -2116609967, guid: af1570f4c3edaf4418a16ace637f52e9, type: 3}
-  - {fileID: 1461873585, guid: af1570f4c3edaf4418a16ace637f52e9, type: 3}
-  - {fileID: -852603960, guid: af1570f4c3edaf4418a16ace637f52e9, type: 3}
-  - {fileID: 986194077, guid: af1570f4c3edaf4418a16ace637f52e9, type: 3}
-  - {fileID: -1990901831, guid: af1570f4c3edaf4418a16ace637f52e9, type: 3}
-  - {fileID: 407320531, guid: af1570f4c3edaf4418a16ace637f52e9, type: 3}
-  cardGrid: {fileID: 888749124}
-  difficultyLevel: 1
-  difficultyDropdown: {fileID: 34864808}
-  dropdownFontSize: 30
-  playerScoreText: {fileID: 2049379328}
-  aiScoreText: {fileID: 1746719740}
-  turnIndicatorText: {fileID: 981119448}
-  endGamePanel: {fileID: 310241024}
-  endGameText: {fileID: 249945021}
-  reshuffleTextPanel: {fileID: 69848361}
-  difficultyPanel: {fileID: 67405594}
-  startGameButton: {fileID: 1033688478}
 --- !u!114 &888749127
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1646,6 +1614,38 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 888749123}
   m_CullTransparentMesh: 1
+--- !u!114 &888749129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 888749123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a23730c15b3150342a10df243adc92f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardPrefab: {fileID: 1949372540437625268, guid: a855f9aadecc29949b04565d8c2af5ff, type: 3}
+  cardSprites:
+  - {fileID: -2116609967, guid: af1570f4c3edaf4418a16ace637f52e9, type: 3}
+  - {fileID: 1461873585, guid: af1570f4c3edaf4418a16ace637f52e9, type: 3}
+  - {fileID: -852603960, guid: af1570f4c3edaf4418a16ace637f52e9, type: 3}
+  - {fileID: 986194077, guid: af1570f4c3edaf4418a16ace637f52e9, type: 3}
+  - {fileID: -1990901831, guid: af1570f4c3edaf4418a16ace637f52e9, type: 3}
+  - {fileID: 407320531, guid: af1570f4c3edaf4418a16ace637f52e9, type: 3}
+  cardGrid: {fileID: 888749124}
+  player1Score: 0
+  player2Score: 0
+  player1ScoreText: {fileID: 2049379328}
+  player2ScoreText: {fileID: 1746719740}
+  turnIndicatorText: {fileID: 981119448}
+  endGamePanel: {fileID: 310241024}
+  endGameText: {fileID: 249945021}
+  reshuffleTextPanel: {fileID: 69848361}
+  difficultyDropdown: {fileID: 34864808}
+  difficultyPanel: {fileID: 67405594}
+  startGameButton: {fileID: 1033688478}
 --- !u!1 &981119446
 GameObject:
   m_ObjectHideFlags: 0
